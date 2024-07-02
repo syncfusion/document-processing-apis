@@ -1,0 +1,42 @@
+version: '3.4'
+
+networks:
+    network:
+        driver: bridge
+
+services:
+  syncfusion.api:
+    container_name: document_processing
+    environment:
+      - ASPNETCORE_HTTP_PORTS=8080
+      - PGHOST=database
+      - PGUSER=postgres
+      - PGPASSWORD=postgres
+      - PGDATABASE=documentprocessing
+      - PGPORT=5432
+    depends_on:
+      - database
+    networks:
+      - network
+    volumes: 
+      - ./storage:/FileData
+      - ./fonts:/usr/local/share/fonts/
+
+    ports:
+      - "8003:8080"
+
+  database:
+    container_name: database
+    image: postgres:latest
+    environment:
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=postgres
+        - POSTGRES_DB=documentprocessing
+    volumes:
+        - ./.containers/products-db:/var/lib/postgresql/data
+    networks:
+      - network
+    ports:
+      - "5432:5432"
+
+

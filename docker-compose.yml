@@ -1,0 +1,14 @@
+version: '3.4'
+
+networks:
+    mediatrexample:
+        driver: bridge
+
+services:
+  syncfusion.api:
+    image: ${DOCKER_REGISTRY-}document-processing-apis
+    build:
+      context: .
+      dockerfile: Dockerfile
+   
+ 
