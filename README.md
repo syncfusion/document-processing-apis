@@ -2,6 +2,8 @@
 
 The document processing API is a Web API used to create PDF documents from Word, Excel, PowerPoint, and HTML documents. It also has functionalities to edit the PDF document such as merge, split, flatten, compress, rotate, and delete PDF pages.
 
+[Syncfusion Document Processing](https://www.syncfusion.com/document-processing-libraries?utm_source=docker&utm_medium=listing&utm_campaign=document-processing-libraries-docker) is a complete package of libraries that offers a rich set of APIs to create, edit, write, and convert PDF, Word, Excel, and PowerPoint files in web, desktop, and mobile applications without Microsoft Office or Adobe dependencies. 
+
 This Docker image is the predefined Docker container of document processing APIs. You can deploy it quickly to your infrastructure.
 
 If you want to add new functionality or customize any existing functionalities, then create your own Docker file by referencing the existing [document processing APIs project](https://github.com/Syncfusion/document-processing-apis).
@@ -42,7 +44,7 @@ docker pull syncfusion/document-processing-apis
 
 **Step 2:** Create the `docker-compose.yml` file with the following code in your file system.
 
-> **Note:** The Document Processing API uses Syncfusion's Essential Studio and requires a valid license key for use in a production environment. To add your valid license key, set the `SYNCFUSION_LICENSE_KEY` environment variable in the `docker-compose.yml` file. To generate a valid license key, refer to this [Syncfusion Licensing FAQ](https://help.syncfusion.com/common/essential-studio/licensing/licensing-faq/where-can-i-get-a-license-key?utm_source=docker&utm_medium=listing&utm_campaign=javascript-word-processor-docker). 
+> **Note:** The Document Processing API uses Syncfusion's Essential Studio and requires a valid license key for use in a production environment. To add your valid license key, set the `SYNCFUSION_LICENSE_KEY` environment variable in the `docker-compose.yml` file. To generate a valid license key, refer to this [Syncfusion Licensing FAQ](https://help.syncfusion.com/common/essential-studio/licensing/licensing-faq/where-can-i-get-a-license-key?utm_source=docker&utm_medium=listing&utm_campaign=document-processing-web-apis-docker). 
 >
 > If the license key is not applied, a watermark will be added to the generated PDF documents. The license key is version specific. If you are upgrading the Docker image, you need to update the license key to match the new version.
 
@@ -99,5 +101,5 @@ The Document Processing APIs Docker instance is now running on localhost with th
 
 ![output](output.jpg)
 
-For further details, please refer to the [documentation link.](https://help.syncfusion.com/document-processing/web-apis/overview)
+For further details, please refer to the [documentation link.](https://help.syncfusion.com/document-processing/web-apis/overview?utm_source=docker&utm_medium=listing&utm_campaign=document-processing-web-apis-docker)
 
