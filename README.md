@@ -6,7 +6,7 @@ The document processing API is a Web API used to create PDF documents from Word,
 
 This Docker image is the predefined Docker container of document processing APIs. You can deploy it quickly to your infrastructure.
 
-If you want to add new functionality or customize any existing functionalities, then create your own Docker file by referencing this project.
+If you want to add new functionality or customize any existing functionalities, then create your own Docker file by referencing the existing [document processing APIs project](https://github.com/Syncfusion/document-processing-apis).
 
 - [Deployment Prerequisites](#deployment-prerequisites)
 - [How to Use This Image](#how-to-use-this-image)
